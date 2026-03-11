@@ -1,11 +1,13 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema
-const ObjectID = Schema.ObjectId;
+const ObjectId = Schema.ObjectId;
 
 const  Tugas2Schema = new Schema({
-    id: ObjectID,
-    title: String,
-    status: String
+    id: ObjectId,
+    nama: String,
+    description: String
+
+    
 
 }, {timestamps: true});
 
